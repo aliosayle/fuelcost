@@ -9,9 +9,9 @@ public class cost
         Double distance = scan.nextDouble();
         Double lpkm = 12.0 / 100.0; // litres per km
         Double litres = (lpkm * distance);
-        Double fuel = (distance * liters);
+        Double fuel = (distance * litres);
         Double price = (32500.0);
-        Double cost = (fuel * price);
-        System.out.println("The cost is: " + cost);
+        Double cost = (litres * price);
+        System.out.println("The cost is: " + cost + " LBP.");
     }
 }
